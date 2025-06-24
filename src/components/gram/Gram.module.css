@@ -1,0 +1,73 @@
+.gramnutsSection {
+  padding: 5rem 2rem;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ca9867;
+
+}
+
+.tagline {
+  font-size: 2.7rem;
+  color: #8b5e3c;
+  margin: 0.5rem auto 3rem;
+  max-width: 600px;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.square {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.wide {
+  aspect-ratio: 16 / 10.5;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .square,
+  .wide {
+    aspect-ratio: auto;
+  }
+}

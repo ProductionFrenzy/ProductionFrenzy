@@ -1,0 +1,31 @@
+.contactSection {
+  background: linear-gradient(to top, #000000, #ffffff);
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+
+.contactButton {
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  font-weight: Bolder;
+  background-color: #25D366; /* WhatsApp green */
+  color: black;
+  border: solid black 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+
+}
+
+.contactButton:hover {
+  filter: brightness(1.05);
+}
