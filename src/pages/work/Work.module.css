@@ -18,3 +18,25 @@ h3{
     font-size: 2.5rem;
     font-weight: bolder;
 }
+
+
+
+
+@media screen and (max-width: 768px) {
+ .work{
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+ }
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    padding: 0 1rem;
+  }
+}
