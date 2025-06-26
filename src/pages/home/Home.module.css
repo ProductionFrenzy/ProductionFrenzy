@@ -100,3 +100,54 @@ h2{
     transform: rotate(360deg);
   }
 }
+
+
+
+@media screen and (max-width: 768px) {
+  .homeContainer {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 3rem 1rem;
+    gap:2rem
+  }
+
+  .left {
+    h1 {
+      font-size: 2.5rem;
+      margin: 0 0 1rem 0;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      text-align: center;
+      margin: 0 1rem;
+      line-height: 1.5;
+    }
+
+    .btns {
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+      padding: 0;
+    }
+
+    button {
+      width: 80%;
+      font-size: 1.2rem;
+    }
+  }
+
+  .right {
+    margin-top: 2rem;
+    .circle {
+      width: 18rem;
+      height: 16rem;
+    }
+
+    .camera {
+      width: 14rem;
+      height: 14rem;
+    }
+  }
+}
