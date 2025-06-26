@@ -85,6 +85,14 @@
 /* Sidebar open state */
 .sidebarOpen {
   right: 0; /* Slide the sidebar into view */
+  height: 100vh;
+    z-index: 100;
+   background: rgba(255, 255, 255, 0.5); /* semi-transparent */
+   background: black;
+  backdrop-filter: blur(10px);          /* blur glass effect */
+  -webkit-backdrop-filter: blur(10px);  /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
 /* Hamburger menu icon */
@@ -93,7 +101,14 @@
   font-size: 2rem;
   cursor: pointer;
   color: white;
-  margin-right: 5rem;
+  margin-right: 3rem;
+
+    text-shadow:
+     -1px -1px 0  black,
+      1px -1px 0 black,
+     -1px  1px 0 black,
+      1px  1px 0 black;
+
 }
 
 /* Close icon styling */
@@ -104,6 +119,8 @@
   right: 1rem;
   font-size: 2rem;
   cursor: pointer;
+  color: white;
+  left: 1rem;
 }
 
 /* Remove horizontal nav links for all screen sizes */
@@ -137,6 +154,7 @@
 
 /* Desktop view adjustments */
 @media (min-width: 768px) {
+  
   .navLinks {
     position: static;
     display: flex !important;

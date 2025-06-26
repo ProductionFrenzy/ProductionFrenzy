@@ -108,7 +108,8 @@ h2{
     flex-direction: column-reverse;
     height: auto;
     padding: 3rem 1rem;
-    gap:2rem
+    gap:2rem;
+    padding-top:5rem;
   }
 
   .left {
